@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      background-color: white;
+      color: #333;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #25fffb;
+      color: rgb(0, 0, 0);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .profile-section {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .profile-image img {
+      max-width: 200px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .profile-info h2 {
+      margin-top: 0;
+    }
+
+    .skills-section canvas,
+    .experience-section canvas,
+    .ar-section canvas {
+      display: block;
+      margin: auto;
+      margin-top: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .experience-section h3 {
+      margin: 10px 0;
+    }
+
+    .ar-section {
+      margin-top: 40px;
+    }
+
+    .ar-section p {
+      margin: 0;
+    }
+
+    .projects-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .projects-section li {
+      margin-bottom: 10px;
+    }
+
+    .contact-section p {
+      margin: 0;
+    }
+
+    
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Welcome to my personal portfolio website</p>
+  </header>
+
+  <div class="container">
+    <section class="profile-section">
+      <div class="profile-image">
+        <img src="img/jexsnnbr.png" alt="My Profile">
+      </div>
+      <div class="profile-info">
+        <h2>About Me</h2>
+        <p>Hi, I'm Phatsanuphong Saensakhan, a Computer 
+          Science student with a strong interest in web development and Augmented Reality  Additionally, I have a passion for exploring Atechnologies and their potential to enhance user experiences.</p>  </div>
+    </section>
+    
+    <section class="skills-section">
+      <h2>My Skills</h2>
+      <canvas id="programming-languages-chart" width="400" height="200"></canvas>
+    </section>
+    
+    <section class="experience-section">
+      <h2>My Experience</h2>
+      <ul>
+        <li>
+          <p>[Company Name] - [Electricity]</p>
+          <p>During my internship, I worked to develop and maintain a few features for a website, straight in HTML, CSS, and learn about web window design. </p> </li>
+      </ul>
+      <canvas id="experience-chart" width="400" height="200"></canvas>
+    </section>
+
+    <section class="contact-section">
+      <h2>Contact Me</h2>
+      <p>Contact Me
+If you are interested in collaborating or have any questions, please contact me at Capoongt87@gmail.com You can also find me on GitHub: Capoongt and Facebook: Cap Phatsanuphong.</p>
+    </section>
+  </div>
+  <script>
+    var programmingLanguagesData = {
+      labels: ['JavaScript', 'Python', 'Java', 'C#', 'Ruby'],
+      datasets: [{
+        label: 'Programming Languages Proficiency',
+        data: [90, 80, 70, 60, 50],
+        backgroundColor: ['blue', 'green', 'orange', 'purple', 'red']
+      }]
+    };
+    
+    var programmingLanguagesChart = new Chart(document.getElementById('programming-languages-chart'), {
+      type: 'bar',
+      data: programmingLanguagesData,
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100
+          }
+        }
+      }
+    });
+    
+    // ... (เพิ่มแผนภูมิอื่น ๆ ได้ตรงนี้) ...
+  </script>
+</body>
+</html>
