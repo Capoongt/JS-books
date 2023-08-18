@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: #1a1919e1;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: #1a1919e1;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+.book {
+    border: 4px solid #f8f1f1;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+    display: inline-block;
+}
+button {
+    margin-top: 70px;
+    background-color: #007bff;
+    color: rgb(236, 224, 224);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    opacity: 0.85;
+    border-color: #22b3c1;
+    
+}
+
+img {
+    width: 100%;
+    overflow: hidden;
+}
+h1 {
+    color:whitesmoke;
+}
+h2,p {
+    font-size: 15px;
+  line-height: 30px;
+  color: #afafaf;
+}
+#cart {
+    color: #f8f1f1;
+}
+div {
+    color: #f8f1f1;
+}
+
+/* ส่วน CSS สำหรับรายการที่เลือกพร้อมปุ่มยืนยัน */
+.selected-items {
+    margin-top: 30px;
+    border: 0px solid #ddd;
+    padding: 20px;
+    background-color: #27292a;
+  }
+  
+  .selected-items h4 {
+    margin-bottom: 10px;
+    color: #22edff;
+  }
+  
+  .selected-items ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .selected-items li {
+    margin-bottom: 5px;
+    color: #22edff;
+  }
+  
+  .confirm-button {
+    background-color: #22edff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: 15px;
+  }
+  
+  .confirm-button:hover {
+    background-color: #22edff; /* สีเมื่อ hover */
+  }
+  
+
+  .add-button,
+  .remove-button {
+    background-color: #22edff;
+    color: white;
+    padding: 6px 12px; /* ปรับขนาดของปุ่ม */
+    border: none;
+    cursor: pointer;
+    border-radius: 18px; /* ปรับขนาดของรูปร่างปุ่ม */
+    margin-right: 4px; /* ลดระยะห่าง */
+    font-size: 15px; /* ปรับขนาดตัวอักษรในปุ่ม */
+    margin-top: 6px; /* ระยะห่างด้านบนของปุ่ม */
+  }
+
+  .remove-button {
+    background-color: #22edff;
+  }
+
+  /* 
+---------------------------------------------
+Most Popular Style
+--------------------------------------------- 
+*/
+
+.most-popular {
+    margin-top: 60px;
+    padding: 30px;
+    background-color: #1f2122;
+    border-radius: 23px;
+  }
+  
+  .most-popular .item {
+    background-color: #27292a;
+    padding: 30px 15px;
+    border-radius: 23px;
+    margin-bottom: 30px;
+  }
+  
+  .most-popular .item .item {
+    padding: 0px;
+    border-radius: 0px;
+    background-color: transparent;
+    margin-bottom: 0px;
+  }
+  
+  .most-popular .item img {
+    border-radius: 23px;
+  }
+  /* ปรับสีพื้นหลังของปุ่มนโยบาย */
+.policy-button {
+    background-color: #22edff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* ปรับสีพื้นหลัง Total Price: */
+  .main-button a {
+    font-size: 14px;
+    color: #000000;
+    background-color: #22edff;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .main-button a:hover {
+    background-color: #fff;
+    color: #010202;
+  }
+
+  
+  .pol1 {
+    margin: 20px;
+    padding: 10px;
+    border: 0px solid #ccc;
+    text-align: center; /* จัดกลางเนื้อหาทั้งหมดใน .pol1 */
+    background-color: #27292a;
+}
+
+
+/* หัวข้อ */
+.heading-section {
+    text-align: center; /* จัดกลางเนื้อหาทั้งหมดใน .pol1 */
+    background-color: #22edff;
+}
+
+.inbot {
+    text-align: center; /* จัดกลางเนื้อหาทั้งหมดใน .pol1 */
+
+}
+var {
+color: #22edff;
+}

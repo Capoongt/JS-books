@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>เว็บขายหนังสือ</title>
+<link rel="stylesheet" href="css/css.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+</head>
+<body>
+    <div class="heading-section">  <h1>ร้านขายหนังสือออนไลน์</h1></div>
+  
+
+<div class="inbot">
+    <div class="book" id="book1">
+        <div>
+            <img src="img/0001.png" alt="">
+        </div>
+        <h2>หนังสือเรื่อง A</h2>
+        <p>ราคา: $100</p>
+        <button class="add-button" type="button" onclick="addToCart(1)">เพิ่ม</button>
+        <span class="item-count" id="item-count-game1">0</span>
+        <button class="remove-button" type="button" onclick="removeFromCart(1)">ลบ</button>
+    </div>
+
+
+    <div class="book" id="book2">
+        <div>
+            <img src="img/00002.png" alt="">
+        </div>
+        <h2>หนังสือเรื่อง B</h2>
+        <p>ราคา: $250</p>
+        <button class="add-button" type="button" onclick="addToCart(2)">เพิ่ม</button>
+        <span class="item-count" id="item-count-game2">0</span>
+        <button class="remove-button" type="button" onclick="removeFromCart(2)">ลบ</button>
+    </div>
+
+
+    <div class="book" id="book3">
+        <div>
+            <img src="img/000003.jpg" alt="">
+        </div>
+        <h2>หนังสือเรื่อง C</h2>
+        <p>ราคา: $300</p>
+        <button class="add-button" type="button" onclick="addToCart(3)">เพิ่ม</button>
+        <span class="item-count" id="item-count-game3">0</span>
+        <button class="remove-button" type="button" onclick="removeFromCart(3)">ลบ</button>
+    </div>
+
+
+    <div class="book" id="book4">
+        <div>
+            <img src="img/00004.png" alt="">
+        </div>
+        <h2>หนังสือเรื่อง D</h2>
+        <p>ราคา: $1000</p>
+        <button class="add-button" type="button" onclick="addToCart(4)">เพิ่ม</button>
+        <span class="item-count" id="item-count-game4">0</span>
+        <button class="remove-button" type="button" onclick="removeFromCart(4)">ลบ</button>
+    </div>
+
+</div>
+       <!-- เพิ่มปุ่ม "แสดงนโยบายการสั่งซื้อ" -->
+    <div class="pol1">
+
+        <div class="main-button">
+            <a> Total Price: <span id="total-price">0</span> B</a>
+          </div>
+          <div class="selected-items">
+            <h4>ตรวจสอบรายการที่เลือก</h4>
+            <ul id="selected-items-list">
+            </ul>
+            <button class="confirm-button" onclick="confirmOrder()">ยืนยันการสั่งซื้อ</button>
+          </div>
+    
+ 
+<button class="policy-button" data-toggle="modal" data-target="#orderPolicyModal"
+onclick="showPolicyDetails();">แสดงนโยบายการสั่งซื้อ</button>
+<div class="pol1">
+   <!-- แสดงรายละเอียดนโยบาย -->
+   <div id="policy-details"></div>
+</div>
+
+   <script src="JS/Myscript.js"></script>
+
+   
+<script>
+    // ฟังก์ชันเพิ่มการแสดงรายละเอียดนโยบายในช่อง
+    function showPolicyDetails() {
+        var policyDetails = document.getElementById("policy-details");
+        var policyHTML = `
+            <p>เมื่อสั่งซื้อสินค้าที่รวมราคาเกิน 1,000 บาท จะได้รับส่วนลด 10%</p>
+        `;
+        policyDetails.innerHTML = policyHTML;
+    }
+</script>
+
+
+</body>
+</html>
